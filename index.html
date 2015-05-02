@@ -2,9 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Omcor Trading</title>
 	<meta name="description" content="Pagina Principal Omcor Trading" />
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+	<link rel="stylesheet" href="../css/foundation.css" />
+	<script src="../js/vendor/modernizr.js"></script>
 </head>
 <body>
 	<header>
@@ -12,23 +15,54 @@
 			<img src="https://s3-us-west-2.amazonaws.com/sts3/omcor_site/logo-omcor.png">
 		</figure>
 
-	<h1>Omcor Trading Webpage</h1>	
-	<nav>
-		<li><a href="#">Ofertas</a></li>
-		<li><a href="#">Novedades</a></li>
-		<li><a href="#">Servicios</a></li>
-		<li><a href="#">Quienes Somos</a></li>
-		<li><a href="#">Servicio Al Cliente</a></li>
+	<nav class="top-bar" dta-topbar role"navigation">
+		<ul class="title-area">
+			<li class="name">
+				<h1><a href="#">Omcor</a></h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		</ul>	
+		<section class="top-bar-section">
+		<ul class="right">
+			<!--<li class="active"><a href="#">Servicio Al Cliente</a></li> -->
+			<li class="has-dropdown">
+				<a href="#">Servicio Al Cliente</a>
+				<ul class="dropdown">
+					<li><a href="#">Hacer un Pedido</a></li>
+					<li><a href="#">Ver Estado de Pedido</a></li>
+					<li><a href="#">Solicitar Cotización</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="left">
+			<li><a href="#">Ofertas</a></li>
+			<li><a href="#">Novedades</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Quienes Somos</a></li>
+		</ul>
+		</section>
 	</nav>
-	<section>
-
-	</section>
 	</header>
+	<section class="row">
+		<h2>Oferta del Mes</h2>
+	</section>
+	<section class="row">
+		<article class="small-12 medium-8 large-10 columns panel">
+			<p>Watch Dogs (estilizado como WATCH_DOGS) es un videojuego de mundo abierto y acción-aventura que fue desarrollado Ubisoft Montreal para las consolas Wii U,3 PlayStation 4,4 PlayStation 3, Xbox One, Xbox 360, así como para Microsoft Windows. La demo fue presentado en la E3 de 2013 y se lanzó oficialmente el 27 de mayo de 2014 para PlayStation 3, PlayStation 4, Xbox 360 y Xbox One. La versión de Wii U se lanzó el 21 de noviembre de 2014.
+			</p>
+			<a class="buton round" href="">Pedir</a>
+		</article>
+	</section>
 	<footer>
 		<strong>ElektroDX (c) 2015 </strong>
 		<em>www.elektrodx.com</em>
 		<li><a href="#"><figure><img src="https://s3-us-west-2.amazonaws.com/sts3/omcor_site/icon_facebook.png"></figure></a></li>
 		<li><a href="#"><figure><img src="https://s3-us-west-2.amazonaws.com/sts3/omcor_site/icon_twitter.png"></figure></a></li>
 	</footer>
+	<script src="../js/vendor/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
